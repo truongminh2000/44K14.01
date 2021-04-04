@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniRoom - Phòng trọ sinh viên</title>
+    <link rel="stylesheet" href="/Assets/Css/Home Page/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/house-icon.png"
+        type="image/gif" sizes="16x16">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+        ! Header
+        ! Banner + Search Bar
+        ! Room + Side bar
+        ! Areas
+        ! Footer
+     -->
+
+    <div class="app">
+        <div class="wrapper">
+            <div id="header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="#"><img class="logo-img" src="/Assets/Design/Logo.png" alt=""></a>
+                    </div>
+
+                    <nav class="navbar">
+                        <ul class="nav--list">
+                            <li class="nav--list__item">
+                                <a href="#">
+                                    <span><a href="#">Trang chủ</a> </span>
+                                </a>
+                            </li>
+                            <li class="nav--list__item ">
+                                <span class="areas"> Khu vực
+                                    <div class="hover--box areas-chooses__box">
+                                        <ul class="quan--list">
+                                            <li class="areas--list__item hover--box__item"> <a href="#"> Hải Châu</a>
+                                            </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#"> Sơn Trà</a>
+                                            </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#">Ngũ Hành Sơn</a>
+                                            </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#">Cẩm Lệ</a> </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#"> Hòa Cầm</a>
+                                            </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#">Thanh Khê</a>
+                                            </li>
+                                            <li class="areas--list__item hover--box__item"> <a href="#">Hòa Vang</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </li>
+                            <li class="nav--list__item">
+                                <a href="#">
+                                    <span><a href="#">Đăng ký</a></span>
+                                </a>
+                                <span> / </span>
+                                <a href="#">
+                                    <span><a href="#">Đăng nhập</a></span>
+                                </a>
+                            </li>
+                            <li class="nav--list__item">
+                                <button class="dang-tin-btn btn">Đăng Tin</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div id="banner">
+                <div class="banner-wrapper">
+                    <div class="container">
+                        <div class="banner-wrap">
+                            <div class="explore">
+                                <div class="explore--img">
+                                    <img src="/Assets/Img/Explore.jpg" alt="" class="explore--img__detail">
+                                </div>
+
+                                <button class="explore-btn btn">Khám phá</button>
+                            </div>
+
+                            <div class="search">
+                                <div class="search--bar">
+                                    <ul class="chooses-list">
+                                        <li class="chooses-list__item choose__box">Trường
+                                            <i class="fas fa-chevron-down chooses-list__item-icon"></i>
+                                            <div class="hover--box schools-choose__box">
+                                                <ul class="school--list">
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Kinh tế</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Bách khoa</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Duy Tân</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Ngoại ngữ</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Đông Á</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Sưu phạm</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại
+                                                        học Sưu phạm Kỹ thuật</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="chooses-list__item choose__box">Quận
+                                            <i class="fas fa-chevron-down chooses-list__item-icon"></i>
+                                            <div class="hover--box huyen-choose__box">
+                                                <ul class="quan--list">
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Hải
+                                                        Châu</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Sơn
+                                                        Trà</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Ngũ
+                                                        Hành Sơn</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Cẩm
+                                                        Lệ</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Hòa
+                                                        Cầm</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a>
+                                                        Thanh Khê</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Hòa
+                                                        Vang</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="chooses-list__item choose__box">Phường
+                                            <i class="fas fa-chevron-down chooses-list__item-icon"></i>
+                                            <div class="hover--box phuong-choose__box">
+                                                <ul class="phuong--list">
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a>
+                                                        Khuê Mỹ</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Bắc
+                                                        Mỹ An</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Mỹ
+                                                        Đa Tây</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Mỹ
+                                                        Đa Đông</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> Mỹ
+                                                        An</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="chooses-list__item choose__box">Giá
+                                            <i class="fas fa-chevron-down chooses-list__item-icon"></i>
+                                            <div class="hover--box gia-choose__box">
+                                                <ul class="price--list">
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a> >
+                                                        3.000.000</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a>
+                                                        2.000.000 - 3.000.000 </li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a>
+                                                        1.500.000 - 2.000.000</li>
+                                                    <li class="areas--list__item hover--box__item"> <a href="#"></a>
+                                                        - 1.500.000</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="choose-list__item">
+                                            <button class="search-btn btn">Tìm kiếm</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contents -->
+            <div id="contents">
+                <div class="contents--wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sixth">
+                                <button class="new-btn"> <a href="">Mới nhất</a> </button>
+
+                                <div class="room">
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="room--list">
+                                        <div class="room--list__item">
+                                            <div class="row">
+                                                <div class="col col-third">
+                                                    <div class="room--list__item-img"></div>
+                                                </div>
+                                                <div class="col col-sixth">
+                                                    <div class="room-info">
+                                                        <div class="row">
+                                                            <p class="room-info-tittle">
+                                                                Phòng trọ gần trường Đại học Kinh tế ưu tiên sinh viên
+                                                                hoặc
+                                                                người đi làm
+                                                            </p>
+                                                        </div>
+                                                        <ul class="row room-info-detail__list">
+                                                            <div class="col-full">
+                                                                <li class="room-detail__item ">Giá:
+                                                                    <span class="room-detail--price"> 1500000</span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Diện tích:
+                                                                    <span
+                                                                        class="room-detail--area">20m<sup>2</sup></span>
+                                                                </li>
+                                                                <li class="room-detail__item ">Địa chỉ:
+                                                                    <span class="room-detail--address">14 Ngũ Hành
+                                                                        Sơn</span>
+                                                                </li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="sidebar col col-third">
+                                <div class="areas--under-layer">
+                                    <div class="areas--upper-layer">Trường</div>
+                                </div>
+
+                                <div class=" schools-chooses__box">
+                                    <ul class="areas--list">
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học
+                                            Kinh Tế</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học Duy
+                                            Tân</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học
+                                            Bách Khoa</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học
+                                            Ngoại ngữ</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học
+                                            Đông Á</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học Sưu
+                                            phạm</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học Sưu
+                                            phạm Kỹ thuật</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Đại học Kỹ
+                                            thuật Y dược</li>
+                                    </ul>
+                                </div>
+
+                                <div class="areas--under-layer">
+                                    <div class="areas--upper-layer">Khu vực</div>
+                                </div>
+
+                                <div class=" areas-chooses__box" style="margin-bottom: 20px;">
+                                    <ul class="areas--list">
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Hải Châu
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Sơn Trà
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Ngũ Hành
+                                            Sơn</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Cẩm Lệ</li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Hòa Cầm
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Thanh Khê
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"></a> Hòa Vang
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="areas--under-layer">
+                                    <div class="areas--upper-layer">Đăng ký nhận tin</div>
+                                </div>
+
+                                <div class="register">
+                                    <p class="register--text">
+                                        Trang web chuyên cung cấp thông tin về phòng trọ uy tín chất lượng cho sinh viên
+                                        tại Đà Nẵng.
+
+                                        Ngoài ra đây cũng là nơi các chủ nhà trọ có thể đăng tin về phòng trọ cho thuê
+
+                                    </p>
+
+                                    <button class="register-btn btn">Đăng
+                                        ký ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="container">
+                    <div class="footer-wrap">
+                        <div class="row">
+                            <div class="col col-third">
+                                <img src="/Assets/Design/Logo.png" alt="" class="footer-logo--img">
+                                <p class="footer-intro--text">
+                                    Trang web chuyên cung cấp thông tin về phòng trọ uy tín chất lượng cho sinh viên tại
+                                    Đà Nẵng.
+                                    <br> <br>
+                                    Ngoài ra đây cũng là nơi các chủ nhà trọ có thể đăng tin về phòng trọ cho thuê
+                                </p>
+                            </div>
+                            <div class="col col-third">
+                                <div class="footer--heading">Thông tin liên hệ</div>
+                                <ul class="social-list">
+                                    <div class="social-list__item">
+                                        <i style="color: #0077FF;" class="fab fa-facebook-square"></i>
+                                        <a href="https://www.facebook.com/mink.truong.35/" target="_blank"
+                                            class="social-list__link">facebook.com/mink.truong.35/</a>
+                                    </div>
+                                    <div class="social-list__item">
+                                        <i style="color: #FB4E4E;" class="fab fa-firefox"></i>
+                                        <a href="#" class="social-list__link">www.uniroom.com.vn</a>
+                                    </div>
+                                    <div class="social-list__item">
+                                        <i style="color: #EC00E4;" class="fas fa-at"></i>
+                                        <a href="#" class="social-list__link">truongcongminhqn@gmail.com</a>
+                                    </div>
+                                    <div class="social-list__item">
+                                        <i style="color: #0DC500;" class="fas fa-map-marked-alt"></i>
+                                        <a href="#" class="social-list__link">14 Doãn Uẩn, Đà Nẵng</a>
+                                    </div>
+                                </ul>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5943020211957!2d108.24099905055941!3d16.034621144568803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175ea5d8d99d%3A0x2e7e2969e5e69555!2zMTQgRG_Do24gVeG6qW4sIEtodcOqIE3hu7ksIE5nxakgSMOgbmggU8ahbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1617447246871!5m2!1svi!2s"
+                                    width="100%" height="200px"
+                                    style="border: 1px solid rgb(0, 0, 0, 0.1); margin-top: 40px; border-radius: 5px;"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                                <!-- <div class="footer--heading">Dịch vụ</div>
+                                <ul class="footer__service">
+                                    <li class="service__item">
+                                        <a href="" class="service-item--link">
+                                            Đăng tin tìm phòng trọ
+                                        </a>
+                                    </li>
+                                    <li class="service__item">
+                                        <a href="" class="service-item--link">
+                                            Tìm phòng trọ
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="col col-third">
+                                <div class="footer--heading">Liên hệ</div>
+                                <form class="contact-form" action="">
+                                    <input type="text" placeholder="Enter your name">
+                                    <input type="email" placeholder="Enter your email">
+                                    <textarea class="" name="message" placeholder="Your message..."
+                                        control-id="" spellcheck="true"></textarea>
+                                    <input type="submit" value="SEND">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="copyright--text">
+                        Copyright © 2021 UNIROOM All Rights Reserved - Design by PHINTEAM.COM
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
