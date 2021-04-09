@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng tin</title>
+    <link rel="stylesheet" href="/Assets/Css/BaiDang/style.css">
+    <link rel="stylesheet" href="/Assets/Css/Home Page/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/house-icon.png"
+        type="image/gif" sizes="16x16">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img class="logo-img" src="/Assets/Design/Logo.png" alt=""></a>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="nav--list">
+                        <li class="nav--list__item">
+                            <a href="#">
+                                <span><a href="#">Trang chủ</a> </span>
+                            </a>
+                        </li>
+                        <li class="nav--list__item ">
+                            <span class="areas"> Khu vực
+                                <div class="hover--box areas-chooses__box">
+                                    <ul class="quan--list">
+                                        <li class="areas--list__item hover--box__item"> <a href="#"> Hải Châu</a>
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"> Sơn Trà</a>
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#">Ngũ Hành Sơn</a>
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#">Cẩm Lệ</a> </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#"> Hòa Cầm</a>
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#">Thanh Khê</a>
+                                        </li>
+                                        <li class="areas--list__item hover--box__item"> <a href="#">Hòa Vang</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="nav--list__item">
+                            <a href="#">
+                                <span><a href="#">Đăng ký</a></span>
+                            </a>
+                            <span> / </span>
+                            <a href="#">
+                                <span><a href="#">Đăng nhập</a></span>
+                            </a>
+                        </li>
+                        <li class="nav--list__item">
+                            <button class="dang-tin-btn btn">Đăng Tin</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="dang-tin">
+            <div class="container">
+                <div class="form-dang-tin">
+                    <div class="background-blur">
+                        <div class="form-heading">
+                            <h2>Nội dung bài đăng</h2>
+                        </div>
+                        <form action="" class="form-detail">
+
+
+                            <div class="row">
+                                <form action="">
+                                    <div class="col col-sixth">
+                                        <label for="tieu-de">Tiêu đề</label>
+                                        <input type="text" id="" name="" placeholder="Nhập tiêu đề" required>
+                                        <label for="tieu-de">Nội dung chi tiết</label>
+                                        <textarea id="subject" name="subject" placeholder="Nhập thông tin chi tiết"
+                                            style="height:200px" required></textarea>
+
+
+                                        <label for="tieu-de">Địa chỉ cụ thể</label>
+                                        <input type="text" id="" name="" placeholder="Nhập chỉ cụ thể" required>
+
+                                        <div class="">
+                                            <label>Thêm hình ảnh</label>
+                                            <input type="file" class="btn" id=""
+                                                style=" font-weight: 400; color: #000;background-color: white; font-size: 1.4rem;">
+                                            <p class="help-block"><em>Định dạng: jpg, png, jpeg,...</em></p>
+                                        </div>
+
+                                        <input type="submit" class="btn" value="Đăng tin"
+                                            style="margin-top: 30px; width: 300px; float: right;">
+
+                                    </div>
+                                    <div class="col col-third" style="margin-left: 50px;">
+                                        <div class="row">
+                                            <div class="col col-full">
+                                                <label for="tieu-de">Giá thuê</label>
+                                                <input type="number" id="" name="" placeholder="1500000" required>
+                                                <label for="tieu-de">Diện tích</label>
+                                                <input type="number" id="" name="" placeholder="Nhập diện tích"
+                                                    required>
+
+                                                <label for="tieu-de">Quận</label>
+                                                <select id="quan" name="quan">
+                                                    <option value="ngu-hanh-son">Ngũ Hành Sơn</option>
+                                                    <option value="lien-chieu">Liên Chiểu</option>
+                                                    <option value="hai-chau">Hải Châu</option>
+                                                    <option value="son-tra">Sơn Trà</option>
+                                                    <option value="cam-le">Cẩm Lệ</option>
+                                                    <option value="thanh-khe">Thanh Khê</option>
+                                                    <option value="hoa-vang">Hòa Vang</option>
+                                                </select>
+
+                                                <label for="tieu-de">Phường</label>
+                                                <select id="phuong" name="phuong">
+                                                    <option value="ngu-hanh-son">Khuê Mỹ</option>
+                                                    <option value="khue-my">Bắc Mỹ An</option>
+                                                    <option value="hai-chau">Mỹ đa Tây</option>
+                                                    <option value="son-tra">mỹ đa đông</option>
+                                                    <option value="cam-le">Mỹ an</option>
+                                                </select>
+
+                                                <label for="tieu-de">Số điện thoại liên hệ</label>
+                                                <input type="tel" id="phone" name="phone" placeholder="0123456789"
+                                                    pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="row">
+                        <div class="col col-third">
+                            <img src="/Assets/Design/Logo.png" alt="" class="footer-logo--img">
+                            <p class="footer-intro--text">
+                                Trang web chuyên cung cấp thông tin về phòng trọ uy tín chất lượng cho sinh viên tại
+                                Đà Nẵng.
+                                <br> <br>
+                                Ngoài ra đây cũng là nơi các chủ nhà trọ có thể đăng tin về phòng trọ cho thuê
+                            </p>
+                        </div>
+                        <div class="col col-third">
+                            <div class="footer--heading">Thông tin liên hệ</div>
+                            <ul class="social-list">
+                                <div class="social-list__item">
+                                    <i style="color: #0077FF;" class="fab fa-facebook-square"></i>
+                                    <a href="https://www.facebook.com/mink.truong.35/" target="_blank"
+                                        class="social-list__link">facebook.com/mink.truong.35/</a>
+                                </div>
+                                <div class="social-list__item">
+                                    <i style="color: #FB4E4E;" class="fab fa-firefox"></i>
+                                    <a href="#" class="social-list__link">www.uniroom.com.vn</a>
+                                </div>
+                                <div class="social-list__item">
+                                    <i style="color: #EC00E4;" class="fas fa-at"></i>
+                                    <a href="#" class="social-list__link">truongcongminhqn@gmail.com</a>
+                                </div>
+                                <div class="social-list__item">
+                                    <i style="color: #0DC500;" class="fas fa-map-marked-alt"></i>
+                                    <a href="#" class="social-list__link">14 Doãn Uẩn, Đà Nẵng</a>
+                                </div>
+                            </ul>
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5943020211957!2d108.24099905055941!3d16.034621144568803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142175ea5d8d99d%3A0x2e7e2969e5e69555!2zMTQgRG_Do24gVeG6qW4sIEtodcOqIE3hu7ksIE5nxakgSMOgbmggU8ahbiwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1617447246871!5m2!1svi!2s"
+                                width="100%" height="200px"
+                                style="border: 1px solid rgb(0, 0, 0, 0.1); margin-top: 40px; border-radius: 5px;"
+                                allowfullscreen="" loading="lazy"></iframe>
+                            <!-- <div class="footer--heading">Dịch vụ</div>
+                            <ul class="footer__service">
+                                <li class="service__item">
+                                    <a href="" class="service-item--link">
+                                        Đăng tin tìm phòng trọ
+                                    </a>
+                                </li>
+                                <li class="service__item">
+                                    <a href="" class="service-item--link">
+                                        Tìm phòng trọ
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <div class="col col-third">
+                            <div class="footer--heading">Liên hệ</div>
+                            <form class="contact-form" action="">
+                                <input type="text" placeholder="Enter your name" required>
+                                <input type="email" placeholder="Enter your email" required>
+                                <textarea class="" name="message" placeholder="Your message..." control-id=""
+                                    spellcheck="true" required></textarea>
+                                <input type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright--text">
+                    Copyright © 2021 UNIROOM All Rights Reserved - Design by PHINTEAM.COM
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
