@@ -1,0 +1,51 @@
+.dang-tin {
+    background-image: url(/Assets/Img/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 94px;
+}
+
+.form-dang-tin {
+    padding: 100px 0;
+}
+
+.background-blur {
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    padding: 30px 50px;
+}
+
+.form-heading h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-heading {
+    margin-bottom: 30px;
+    border-bottom: 3px solid #fff;
+}
+
+.form-detail label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form-detail textarea,
+.form-detail input,
+.form-detail select {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.form-detail option {
+    text-transform: capitalize;
+}
