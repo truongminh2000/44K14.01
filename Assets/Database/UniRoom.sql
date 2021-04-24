@@ -59,7 +59,7 @@ insert wards
 values 
 ('P001', 'Hải Châu 1', 'Q001'),
 ('P002', 'Hải Châu 2', 'Q001'),
-('P003', 'Thạch Thang', 'Q001'),
+('P003', 'Thạch Khang', 'Q001'),
 ('P004', 'Thanh Bình', 'Q001'),
 ('P005', 'Thuận Phước', 'Q001'),
 ('P006', 'Hòa Thuận Tây', 'Q001'),
