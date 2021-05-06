@@ -123,7 +123,7 @@ public class PublicIndexController {
 	
 	@GetMapping(URLConstant.DETAIL_ID)
 	public String detail(Model model, @PathVariable(required = true) Integer pid) {
-		Post post = postService.findById(pid);
+		Post post = postService.findByIdPublic(pid);
 		List<District> districtList = districtWardService.getDistrictList();
 		model.addAttribute("districtList", districtList);
 		model.addAttribute("post", post);

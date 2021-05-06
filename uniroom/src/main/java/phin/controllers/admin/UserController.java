@@ -104,7 +104,7 @@ public class UserController {
 		return "redirect:/user/index.html";
 	}
 	
-	@GetMapping("post/del/{username}/{id}")
+	@GetMapping("/post/del/{username}/{id}")
 	public String del(@PathVariable(required = true) Integer id, @PathVariable(required = true) String username, 
 			RedirectAttributes ra) {
 		Post post = postService.findById(id);

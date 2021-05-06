@@ -255,6 +255,39 @@ public class PostDAO extends AbstractDAO<Post> {
 		  }, id);
 	}
 	
+	public Post findByIdPublic(int id) {
+		final String SQL = "SELECT pid, pname, username, description, date_create AS dateCreate, "
+				+ "area, picture, status, add_detail AS addDetail, price, p.wid, wname, w.did, dname "
+				+ "FROM posts p INNER JOIN wards w ON p.wid = w.wid "
+				+ "INNER JOIN districts d ON w.did = d.did "
+				+ "WHERE pid = ? AND status = 1";
+		return jdbcTemplate.query(SQL, new ResultSetExtractor<Post>() {
+			  Post post = null;
+			  @Override
+			  public Post extractData(ResultSet rs) throws SQLException, DataAccessException {
+				  try {
+					  if (rs.next()) {
+						  post = new Post(rs.getInt("pid"), 
+								  rs.getString("pname"), 
+								  rs.getString("username"), 
+								  rs.getString("description"), 
+								  rs.getTimestamp("dateCreate"), 
+								  rs.getInt("area"), 
+								  rs.getString("picture"), 
+								  rs.getInt("status"), 
+								  rs.getString("addDetail"), 
+								  rs.getInt("price"), 
+								  new Ward(rs.getInt("wid"), rs.getString("wname"), rs.getInt("did")), 
+								  new District(rs.getInt("did"), rs.getString("dname")));
+					  }
+				  } catch (Exception e) {
+						e.printStackTrace();
+				  }
+				  return post;
+			  }
+		  }, id);
+	}
+	
 	@Override
 	public int del(int id) {
 		final String SQL = "DELETE FROM posts WHERE pid = ?";

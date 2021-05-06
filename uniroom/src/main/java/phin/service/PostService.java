@@ -54,6 +54,10 @@ public class PostService implements ICRUDService<Post> {
 	public Post findById(int id) {
 		return postDAO.findById(id);
 	}
+	
+	public Post findByIdPublic(int id) {
+		return postDAO.findByIdPublic(id);
+	}
 
 	@Override
 	public int totalRow() {
