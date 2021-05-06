@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+	<!-- [Bieu thuc chinh quy] -> ^ : bat dau - ^a -> $ : ket thuc - a$ [a-z] 
+		: 1 ky tu tu a - z viet thuong [A-Z} : 1 ky tu tu A - Z viet hoa ([a-z]*) 
+		: dai dien 0 hoac nhieu ky tu tu a - z ([A-Z]*) : dai dien 0 hoac nhieu ky 
+		tu tu A - Z -> (.*) : dai dien 0 hoac nhieu ky tu bat ky -> (.+) : dai dien 
+		1 hoac nhieu ky tu bat ky [a-zA-Z] : 1 ky tu tu a-z A-Z [0-9] : cac so tu 
+		0 den 9 -> ([0-9]+) : cac so tu 1-n -> ([0-9]*) : cac so tu 0-n -->
+	<!-- /public/cat?id=5 bsong.local:8080/danh-muc/hip-hop-viet-5.html -->
+	
+	<rule>
+		<from>^/university/(.+)-([0-9]+).html$</from>
+		<to>/university/$2</to>
+	</rule>
+	
+	<rule>
+		<from>^/district/(.+)-([0-9]+).html$</from>
+		<to>/district/$2</to>
+	</rule>
+
+	<rule>
+		<from>^/district/(.+)-([0-9]+)-([0-9]*).html$</from>
+		<to>/district/$2/$3</to>
+	</rule>
+
+	<rule>
+		<from>^/detail/(.+)-([0-9]*).html$</from>
+		<to>/detail/$2</to>
+	</rule>
+
+	<rule>
+		<from>^/index.html$</from>
+		<to>/index</to>
+	</rule>
+	<rule>
+		<from>^/index-([0-9]*).html$</from>
+		<to>/index/$1</to>
+	</rule>
+
+	<rule>
+		<from>^/feedback.html$</from>
+		<to>/feedback</to>
+	</rule>
+	
+	<rule>
+		<from>^/login.html$</from>
+		<to>/auth/login</to>
+	</rule>
+	
+	<rule>
+		<from>^/signup.html$</from>
+		<to>/auth/signup</to>
+	</rule>
+	
+	<rule>
+		<from>^/guide.html$</from>
+		<to>/guide</to>
+	</rule>
+	<rule>
+		<from>^/guide/(.+)-([0-9]*).html$</from>
+		<to>/guide/$2</to>
+	</rule>
+	
+	<rule>
+		<from>^/add.html$</from>
+		<to>/add</to>
+	</rule>
+	
+	<rule>
+		<from>^/error.html$</from>
+		<to>/error/403</to>
+	</rule>
+	
+	<rule>
+		<from>^/user/index.html$</from>
+		<to>/admin/indexuser</to>
+	</rule>
+	
+	<rule>
+		<from>^/admin/index.html$</from>
+		<to>/admin/index</to>
+	</rule>
+	
+	<rule>
+		<from>^/user/profile/(.+)-([0-9]*).html$</from>
+		<to>/admin/indexuser/user/edit/$1/$2</to>
+	</rule>
+	
+	<rule>
+		<from>^/user/post/edit/(.+)-([0-9]*).html$</from>
+		<to>/admin/indexuser/post/edit/$1/$2</to>
+	</rule>
+	
+	<rule>
+		<from>^/user/post/(.+)/index.html$</from>
+		<to>/admin/indexuser/post/index/$1</to>
+	</rule>
+
+	<rule>
+		<from>^/user/post/add.html$</from>
+		<to>/admin/indexuser/post/add</to>
+	</rule>
+	
+	<rule>
+		<from>^/user/post/delete/(.+)-([0-9]*).html$</from>
+		<to>/admin/indexuser/post/del/{$1}/{$2}</to>
+	</rule>
+
+</urlrewrite>

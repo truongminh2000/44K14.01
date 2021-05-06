@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="admin.template" template="/WEB-INF/jsp/templates/admin_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/components/admin/header.jsp" />
+		<put-attribute name="leftbar" value="/WEB-INF/jsp/components/admin/leftbar.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/components/admin/footer.jsp" />
+	</definition>
+	
+	<definition name="admin.index" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.guide.index" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/guide/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.guide.add" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/guide/add.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.guide.edit" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/guide/edit.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.feedback.index" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/feedback/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.feedback.add" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/feedback/add.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.post.index" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/post/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.post.add" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/post/add.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.post.edit" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/post/edit.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.user.index" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/user/index.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.user.add" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/user/add.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.user.edit" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/user/edit.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.add" extends="admin.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/admin/add.jsp"></put-attribute>
+	</definition>
+	<definition name="error.403"
+		template="/WEB-INF/jsp/views/403.jsp" />
+	<definition name="auth.login"
+		template="/WEB-INF/jsp/views/login.jsp" />
+		
+	<definition name="admin.indexuser"
+		template="/WEB-INF/jsp/views/admin/indexuser/index.jsp" />
+	<definition name="admin.indexuser.user.edit"
+		template="/WEB-INF/jsp/views/admin/indexuser/useredit.jsp" />
+	<definition name="admin.indexuser.post.add"
+		template="/WEB-INF/jsp/views/admin/indexuser/postadd.jsp" />
+	<definition name="admin.indexuser.post.index"
+		template="/WEB-INF/jsp/views/admin/indexuser/postindex.jsp" />
+	<definition name="admin.indexuser.post.edit"
+		template="/WEB-INF/jsp/views/admin/indexuser/postedit.jsp" />
+</tiles-definitions>

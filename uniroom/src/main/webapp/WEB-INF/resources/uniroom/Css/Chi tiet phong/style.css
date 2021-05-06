@@ -1,0 +1,142 @@
+
+.room-detail {
+    margin-top: 94px;
+}
+
+.room-detail--wrap {
+    padding: 40px 0 140px 0;
+    
+}
+
+.room-detail--contents {
+
+}
+
+.room--img {
+    overflow: hidden;
+}
+
+.room--img__item {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.room--title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 2.6rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.room-address-detail {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.room-price {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #1CD194;
+}
+
+.room-heading {
+    margin-top: 6rem;
+    font-size: 2.6rem;
+    color: #38478B;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.room-heading:first-child {
+    margin-top: 0;
+}
+
+.content-box {
+    border-radius: 14px;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.infomation--list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infomation--list__item {
+    padding: 10px 30px;
+    font-weight: 500;
+    width: 100%;
+    color: #4c5992f5;
+}
+
+.infomation--list__item label {
+    font-size: 1.6rem;
+}
+
+.infomation--list__item > span {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: black;
+    float: right;
+}
+
+.room-info--detail {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 20px;
+}
+
+.room-detail--contact {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.65);
+    margin-top: 46px;
+    border-radius: 20px;
+}
+
+.contact--avata {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/Assets/Img/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.65);
+    margin-right: 20px;
+}
+
+.contact-name {
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #38478B;
+}
+
+.room-detail--contact__top {
+    display: flex;
+}
+
+.room-detail--contact__bottom {
+    display: flex;
+    margin-top: 20px;
+    background-color: #1CD194;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-phone-box {
+    padding: 12px 20px;
+    background-color: #38478B;
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+}

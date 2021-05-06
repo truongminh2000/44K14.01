@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="uniroom.template" template="/WEB-INF/jsp/templates/uniroom_template.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/components/uniroom/header.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/jsp/components/uniroom/sidebar.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/components/uniroom/footer.jsp" />
+	</definition>
+	
+	<definition name="uniroom.index" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/uniroom/index.jsp"></put-attribute>
+	</definition>
+	<definition name="uniroom.guide" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/uniroom/guide.jsp"></put-attribute>
+	</definition>
+	<definition name="uniroom.feedback" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/uniroom/feedback.jsp"></put-attribute>
+	</definition>
+	<definition name="uniroom.detail" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/uniroom/detail.jsp"></put-attribute>
+	</definition>
+	<definition name="uniroom.add" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/uniroom/add.jsp"></put-attribute>
+	</definition>
+	<definition name="auth.signup" extends="uniroom.template">
+		<put-attribute name="content" value="/WEB-INF/jsp/views/signup.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>

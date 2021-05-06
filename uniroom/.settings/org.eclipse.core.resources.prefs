@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java/phin/controllers/email/MailController.java=UTF-8
+encoding//src/main/java/phin/controllers/uniroom/PublicIndexController.java=UTF-8
+encoding//src/main/java/phin/models/District.java=UTF-8
+encoding//src/main/java/phin/models/FeedBack.java=UTF-8
+encoding//src/main/java/phin/models/Guide.java=UTF-8
+encoding//src/main/java/phin/models/Mail.java=UTF-8
+encoding//src/main/java/phin/models/Post.java=UTF-8
+encoding//src/main/java/phin/models/User.java=UTF-8
+encoding//src/main/java/phin/models/Ward.java=UTF-8
+encoding//src/main/java/phin/util/StringUtil.java=UTF-8
+encoding//src/main/resources/messages/messages.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/views/admin/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/views/uniroom/detail.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/views/uniroom/guide.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/views/uniroom/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/resources/uniroom/Css/Home\ Page/style.css=UTF-8
